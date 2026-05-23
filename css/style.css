@@ -1,0 +1,101 @@
+ .navbar{
+    background:#1f2d3d;
+}
+
+.logo{
+    height:40px;
+    margin-right:10px;
+}
+
+/* MENÚ */
+.menu-link{
+    color:#cfd8dc;
+    text-decoration:none;
+    padding:6px 12px;
+    border-radius:6px;
+    transition:0.2s;
+}
+
+.menu-link:hover{
+    background:#34495e;
+    color:#fff;
+}
+
+.menu-active{
+    background:#17a2b8;
+    color:#fff !important;
+}
+
+/* FOOTER */
+.footer{
+    background:#1f2d3d;
+    color:#cfd8dc;
+    padding:15px;
+    text-align:center;
+    font-size:13px;
+    margin-top:40px;
+    border-top:2px solid #17a2b8;
+}
+
+
+
+/* Eliminamos bordes de la tabla y celdas */
+table.dataTable, 
+table.dataTable th, 
+table.dataTable td {
+    border: none !important;
+}
+
+/* El contenedor principal con un fondo gris muy suave */
+.dataTables_wrapper {
+    background: #f8fafc; /* Color de fondo general */
+    padding: 30px;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Encabezados: Sin línea, solo tipografía elegante */
+table.dataTable thead th {
+    background-color: transparent;
+    color: #94a3b8; /* Gris suave para que no compita con los datos */
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 20px !important;
+}
+
+/* Filas: Aquí es donde ocurre la magia */
+table.dataTable tbody tr {
+    background-color: transparent !important;
+}
+
+/* Creamos un efecto de "celda flotante" */
+table.dataTable tbody td {
+    background-color: #ffffff; /* Fondo blanco para las celdas */
+    padding: 20px !important;
+    color: #334155;
+}
+
+/* Redondeamos las esquinas de la fila (la primera y última celda) */
+table.dataTable tbody tr td:first-child {
+    border-radius: 12px 0 0 12px;
+}
+
+
+
+/* Espaciado entre filas (simulando que no hay líneas) */
+table.dataTable {
+    border-collapse: separate !important;
+    border-spacing: 0 10px !important; /* Esto crea el hueco entre filas */
+}
+
+/* Hover: Un efecto de elevación sutil */
+table.dataTable tbody tr:hover td {
+    background-color: #ffffff !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+
